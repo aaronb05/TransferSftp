@@ -1,0 +1,12 @@
+* Publish Windows Service *
+
+1. Right click project, select publish, to folder, default file location is fine.
+2. Once publish is successful, clic open folder to go to file location.
+3. Copy file location of exe to clipboard
+4. Open Powershell in admin along with services window.
+5. In powershell type, sc.exe create <Service Name> binpath="<filepath of exe>"
+6. Refresh services in Service window, find the newly created service and then right click, start service
+
+
+
+* To delete a service type sc.exe delete <ServiceName> in powershell
